@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../common/Common.css';
+import '../common/signup.css';
 import { useNavigate } from 'react-router-dom';
 
 export const Signup = () => {
@@ -53,7 +53,7 @@ export const Signup = () => {
             value={formData.first}
             onChange={handleChange}
           />
-          {errors.first && <p style={{ color: 'red', fontSize: '0.8em', marginTop: '5px' }}>{errors.first}</p>}
+          {errors.first && <p>{errors.first}</p>}
         </div>
         <div className="form-group">
           <label htmlFor="last">Last Name:</label>
@@ -64,7 +64,7 @@ export const Signup = () => {
             value={formData.last}
             onChange={handleChange}
           />
-          {errors.last && <p style={{ color: 'red', fontSize: '0.8em', marginTop: '5px' }}>{errors.last}</p>}
+          {errors.last && <p>{errors.last}</p>}
         </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
@@ -75,7 +75,7 @@ export const Signup = () => {
             value={formData.email}
             onChange={handleChange}
           />
-          {errors.email && <p style={{ color: 'red', fontSize: '0.8em', marginTop: '5px' }}>{errors.email}</p>}
+          {errors.email && <p>{errors.email}</p>}
         </div>
         <div className="form-group">
           <label htmlFor="password">Password:</label>
@@ -86,7 +86,7 @@ export const Signup = () => {
             value={formData.password}
             onChange={handleChange}
           />
-          {errors.password && <p style={{ color: 'red', fontSize: '0.8em', marginTop: '5px' }}>{errors.password}</p>}
+          {errors.password && <p>{errors.password}</p>}
         </div>
         <button type="submit">Submit</button>
       </form>
