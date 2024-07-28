@@ -1,0 +1,57 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Styling the sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the sidebar header */
+.sidebar-header {
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+}
+
+/* Styling the sidebar menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px;
+}
+
+.sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #555;
+}
+
+/* Styling the main content */
+.main-content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    flex: 1;
+}
