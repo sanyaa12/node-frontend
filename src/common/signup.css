@@ -55,7 +55,7 @@ body {
 button[type="submit"] {
   width: 100%;
   padding: 10px 15px;
-  background-color: red !important; /* Ensure this is red */
+  background-color: lavender !important; /* Ensure this is lavender */
   border: none;
   border-radius: 4px;
   color: white;
@@ -64,15 +64,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: darkred !important; /* Ensure this is a darker red */
+  background-color: darkorchid !important; /* Ensure this is a darker lavender */
 }
-<div class="main">
-  <h2>Form Title</h2>
-  <div class="form-group">
-    <label for="inputField">Label</label>
-    <input type="text" id="inputField" />
-    <p>Error message</p>
-  </div>
-  <button type="submit">Submit</button>
-</div>
-
