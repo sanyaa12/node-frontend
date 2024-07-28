@@ -1,7 +1,7 @@
 .dashboard-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   overflow: hidden; /* Prevents overflowing content */
   background-color: #e0e0e0; /* Light grey background for the entire dashboard */
 }
