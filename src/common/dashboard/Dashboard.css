@@ -1,23 +1,31 @@
 .dashboard-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  .dashboard-content {
-    display: flex;
-    flex: 1;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .dashboard-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; /* Prevents overflowing content */
+  background-color: #e0e0e0; /* Light grey background for the entire dashboard */
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; /* Ensures the content does not overflow */
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* White background for the main content area */
+  overflow-y: auto; /* Allows vertical scrolling for overflowing content */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+}
+
+
+.header {
+  padding: 20px;
+  background-color: #3e8e41; /* Slightly darker green for the header */
+  color: white; /* White text color */
+  text-align: center; /* Center-align the header text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the bottom edge */
+}
