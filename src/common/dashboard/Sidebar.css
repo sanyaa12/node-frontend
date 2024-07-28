@@ -1,0 +1,56 @@
+/* Improved Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #282c34; /* Slightly darker background for better contrast */
+    color: #ffffff; /* Ensure text is readable */
+    padding: 20px;
+    height: 100%; /* Full height for a sidebar */
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more pronounced effect */
+    position: fixed; /* Fixes the sidebar in place */
+    top: 0; /* Align the sidebar to the top */
+    left: -250px; /* Start sidebar completely out of view on the left */
+    transition: left 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both position and shadow */
+    z-index: 1000; /* Ensure the sidebar stays on top of other content */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .sidebar h2 {
+    color: #ffffff; /* Ensure headings are readable */
+    margin-top: 0; /* Remove top margin to align with padding */
+    font-size: 1.5em; /* Increase font size for headings */
+    text-align: center; /* Center align the heading */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /* Margin for spacing */
+    width: 100%; /* Full width for the list */
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0; /* Margin for spacing between items */
+  }
+  
+  .sidebar ul li a {
+    color: #ffffff; /* Ensure text is readable */
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px; /* Increase padding for better touch targets */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 100%; /* Full width for links */
+    text-align: center; /* Center align the text in links */
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #3b4049; /* Slightly lighter background on hover */
+  }
+  
+  /* Optional: Add a class to shift the sidebar back */
+  .sidebar.active {
+    left: 0; /* Move sidebar into view */
+  }
+  
