@@ -1,3 +1,7 @@
+body {
+  border: 5px solid red; /* Debug: Ensure correct CSS is loaded */
+}
+
 .main {
   width: 100%;
   max-width: 400px;
@@ -51,7 +55,7 @@
 button[type="submit"] {
   width: 100%;
   padding: 10px 15px;
-  background-color: #007bff !important ;
+  background-color: red !important; /* Ensure this is red */
   border: none;
   border-radius: 4px;
   color: white;
@@ -60,5 +64,15 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3 !important;
+  background-color: darkred !important; /* Ensure this is a darker red */
 }
+<div class="main">
+  <h2>Form Title</h2>
+  <div class="form-group">
+    <label for="inputField">Label</label>
+    <input type="text" id="inputField" />
+    <p>Error message</p>
+  </div>
+  <button type="submit">Submit</button>
+</div>
+
