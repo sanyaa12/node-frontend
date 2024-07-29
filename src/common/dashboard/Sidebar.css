@@ -1,10 +1,10 @@
 /* Improved Sidebar Styling */
 .sidebar {
-  width: 260px; /* Slightly wider sidebar */
+  width: 3000px; /* Slightly wider sidebar */
   background-color: #343a40; /* Slightly lighter dark background for better contrast */
   color: #f8f9fa; /* Light grey text for readability */
   padding: 20px; /* Reduced padding to decrease sidebar height */
-  height: calc(100% - 60px); /* Reduce sidebar height to accommodate the header */
+  height: calc(100% - 80px); /* Reduce sidebar height to accommodate the header */
   box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for a more pronounced effect */
   position: fixed; /* Fixes the sidebar in place */
   top: 60px; /* Move the sidebar below the header */
