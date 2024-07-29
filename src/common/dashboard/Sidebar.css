@@ -3,11 +3,11 @@
   width: 260px; /* Slightly wider sidebar */
   background-color: #343a40; /* Slightly lighter dark background for better contrast */
   color: #f8f9fa; /* Light grey text for readability */
-  padding: 25px; /* Increased padding for better spacing */
-  height: 100%; /* Full height for a sidebar */
+  padding: 20px; /* Reduced padding to decrease sidebar height */
+  height: calc(100% - 60px); /* Reduce sidebar height to accommodate the header */
   box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for a more pronounced effect */
   position: fixed; /* Fixes the sidebar in place */
-  top: 0; /* Align the sidebar to the top */
+  top: 60px; /* Move the sidebar below the header */
   left: -260px; /* Start sidebar completely out of view on the left */
   transition: left 0.4s ease, box-shadow 0.3s ease; /* Smooth transition for both position and shadow */
   z-index: 1100; /* Ensure the sidebar stays on top of other content */
@@ -26,19 +26,19 @@
 .sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 25px 0; /* Increased margin for spacing */
+  margin: 20px 0; /* Reduced margin for spacing */
   width: 100%; /* Full width for the list */
 }
 
 .sidebar ul li {
-  margin: 12px 0; /* Increased margin for spacing between items */
+  margin: 10px 0; /* Reduced margin for spacing between items */
 }
 
 .sidebar ul li a {
   color: #f8f9fa; /* Light grey text for readability */
   text-decoration: none;
   display: block;
-  padding: 12px 18px; /* Increased padding for better touch targets */
+  padding: 10px 16px; /* Reduced padding for better fit */
   border-radius: 6px; /* More rounded corners for links */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
   width: 100%; /* Full width for links */
@@ -53,4 +53,3 @@
 .sidebar.active {
   left: 0; /* Move sidebar into view */
 }
-
